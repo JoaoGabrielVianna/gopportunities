@@ -11,11 +11,9 @@ import (
 func initializeRoutes(router *gin.Engine) {
 	// Initialize Handler
 	handler.InitializeHandler()
-	basePath := "/ap1/v1"
+	basePath := "/api/v1"
 	docs.SwaggerInfo.BasePath = basePath
-
 	v1 := router.Group(basePath)
-
 	{
 		v1.GET("/opening", handler.ShowOpeningHandler)
 		v1.POST("/opening", handler.CreateOpeningHandler)
@@ -24,6 +22,6 @@ func initializeRoutes(router *gin.Engine) {
 		v1.GET("/openings", handler.ListOpeningHandler)
 	}
 
-	// Initialize swagger docs
+	// // Initialize swagger docs
 	router.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerfiles.Handler))
 }
