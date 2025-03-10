@@ -8,6 +8,18 @@ import (
 	"github.com/joaogabrielvianna/gopportunities/schemas"
 )
 
+// @BasePath /api/v1
+
+// @Summary Show opening
+// @Description Shpw a job opening
+// @Tags Openings
+// @Accept json
+// @Produce json
+// @Param id query string true "Opening identification"
+// @Success 200 {object} ShowOpeningResponse
+// @Failure 400 {object} ErrorResponse
+// @Failure 500 {object} ErrorResponse
+// @Router /opening [get]
 func ShowOpeningHandler(c *gin.Context) {
 	id := c.Query("id")
 
