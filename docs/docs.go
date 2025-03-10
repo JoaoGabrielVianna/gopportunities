@@ -14,6 +14,7 @@ const docTemplate = `{
     },
     "host": "{{.Host}}",
     "basePath": "{{.BasePath}}",
+<<<<<<< HEAD
     "paths": {
         "/opening": {
             "get": {
@@ -384,6 +385,9 @@ const docTemplate = `{
             }
         }
     }
+=======
+    "paths": {}
+>>>>>>> 7b9bd8647c559d091685b7b3baff8af2182912ec
 }`
 
 // SwaggerInfo holds exported Swagger Info so clients can modify it

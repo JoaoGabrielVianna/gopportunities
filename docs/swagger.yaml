@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 definitions:
   handler.CreateOpeningRequest:
     properties:
@@ -242,4 +243,9 @@ paths:
       summary: List openings
       tags:
       - Openings
+=======
+info:
+  contact: {}
+paths: {}
+>>>>>>> 7b9bd8647c559d091685b7b3baff8af2182912ec
 swagger: "2.0"
